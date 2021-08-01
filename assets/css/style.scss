@@ -449,6 +449,7 @@ h3 {
 		text-transform: uppercase;
 		margin-right: 34px;
 		transition: color .2s linear;
+		cursor: pointer;
 		&:first-child {
 			margin-right: 24px;
 		}
@@ -700,6 +701,7 @@ h3 {
 }
 
 .block-card-new {
+	padding-top: 80px;
 	.container {
 		>div {
 			position: relative;
