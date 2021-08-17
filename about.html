@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>О компании</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="arrow-slider" viewBox="0 0 492.004 492.004">
+			<g>	<g><path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/></g></g>
+		</symbol>
+		<symbol id="close-icon" viewBox="0 0 320 512">
+			<g><g><g/><g><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></g></g></g>
+		</symbol>
+	</svg>
+
+
+	<div class="wrapper">
+		<header class="header white">
+			<div class="container">
+				<a href="/" class="header__logo">
+					<img src="assets/images/logo.svg" alt="">
+				</a>
+				<div class="burger" id="burger">
+					<span class="burger__item"></span>
+				</div>
+				<nav class="header__nav">
+					<div class="header__links">
+						<div class="link-toggle">
+							<span attr-menu="menu_1" class="header__link drop_auto header__link_line">Автомобили под заказ</span>
+							<div id="menu_1" class="menu_drop menu">
+								<div class="menu-container">
+								<div class="menu__inner">
+									<div class="menu__block menu__block_small">
+										<div class="menu__block-header">
+											<h4 class="menu__title">Автомобили под заказ</h4>
+										</div>
+										<a href="#" class="menu__link menu__link_arrow">Автомобили с полной пошлиной</a>
+										<a href="#" class="menu__link menu__link_arrow">Автомобили без документов</a>
+										<a href="#" class="menu__link menu__link_arrow">Аукцион онлайн</a>
+									</div>
+									<div class="menu__block menu__block_big">
+										<div class="menu__block-header">
+											<h4 class="menu__title">марки автомобилей</h4>
+											<a href="#" class="link link_blue link_small"><span class="white-bg">Посмотреть каталог</span></a>
+										</div>
+										<div class="menu__list">
+											<ul>
+												<li><a href="#">Audi</a></li>
+												<li><a href="#">BMW</a></li>
+												<li><a href="#">Daihatsu</a></li>
+												<li><a href="#">Honda</a></li>
+												<li><a href="#">Isuzu</a></li>
+												<li><a href="#">Lexus</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">Lincoln</a></li>
+												<li><a href="#">Mazda</a></li>
+												<li><a href="#">Mercedes</a></li>
+												<li><a href="#">Mitsubishi</a></li>
+												<li><a href="#">Nissan</a></li>
+												<li><a href="#">Subaru</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">Suzuki</a></li>
+												<li><a href="#">Toyota</a></li>
+											</ul>
+										</div>
+									</div>
+							
+								</div>
+								<div class="menu__download">
+									<a href="#">Скачать договор поручения</a>
+								</div>
+								</div>
+							</div><!--/menu-->
+						</div>
+						
+						 
+
+						<div class="link-toggle">
+							<span attr-menu="menu_2" class="header__link drop_auto header__link_line">электромобили</span>
+							<div id="menu_2" class="menu_drop menu">
+								<div class="menu-container">
+								<div class="menu__inner">
+									<div class="menu__block menu__block_small">
+										<div class="menu__block-header">
+											<h4 class="menu__title">электромобили</h4>
+										</div>
+										<a href="#" class="menu__link menu__link_arrow">Модели электромобилей</a>
+										<a href="#" class="menu__link menu__link_arrow">Ремонт электромобилей</a>
+									</div>
+									<div class="menu__block menu__block_big">
+										<div class="menu__block-header">
+											<h4 class="menu__title">марки автомобилей</h4>
+											<a href="#" class="link link_blue link_small"><span class="white-bg">Посмотреть каталог</span></a>
+										</div>
+										<div class="menu__list">
+											<ul>
+												<li><a href="#">Audi</a></li>
+												<li><a href="#">BMW</a></li>
+												<li><a href="#">Daihatsu</a></li>
+												<li><a href="#">Honda</a></li>
+												<li><a href="#">Isuzu</a></li>
+												<li><a href="#">Lexus</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">Lincoln</a></li>
+												<li><a href="#">Mazda</a></li>
+												<li><a href="#">Mercedes</a></li>
+												<li><a href="#">Mitsubishi</a></li>
+												<li><a href="#">Nissan</a></li>
+												<li><a href="#">Subaru</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">Suzuki</a></li>
+												<li><a href="#">Toyota</a></li>
+											</ul>
+										</div>
+									</div>
+							
+								</div>
+								<div class="menu__download">
+									<a href="#">Скачать договор поручения</a>
+								</div>
+								</div>
+							</div><!--/menu-->
+						</div>
+
+						<a href="#" class="header__link header__link_line nodrop">Блог</a>
+						<div class="link-toggle">
+							<span attr-menu="menu_3" class="header__link drop_auto header__link_line on">О компании</span>
+							<div id="menu_3" class="menu_drop menu menu_company">
+								<div class="menu-container">
+								<div class="menu__inner">
+									<div class="menu__block menu__block_small">
+										<div class="menu__block-header">
+											<h4 class="menu__title">О компании</h4>
+										</div>
+										<a href="about.html" class="menu__link menu__link_arrow">О компании</a>
+										<a href="#" class="menu__link menu__link_arrow">Отзывы</a>
+										<a href="contact.html" class="menu__link menu__link_arrow">Контакты</a>
+									</div>
+									<div class="menu__block menu__block_big">
+										<div class="menu__map-block">
+											<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abb17cc76f9d23f9d1038d13b9b2e2664a827c2d1c591eff5cf0c181555a1da7c&amp;source=constructor"  frameborder="0"></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="menu__foot">
+									<div>Адрес</div>
+									<div>г. Новосибирск, ул. Кленовая, 10/1 к8</div>
+								</div>
+								</div>
+							</div><!--/menu-->
+						</div>
+					</div>
+					<div class="header__contact">
+						<a href="tel:+73833110714" class="header__link header__link_phone">+7 (383) 311 07 14</a>
+						<a href="#" class="btn btn-open">оставить заявку</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="wrapper-menu">
+		<main class="main pt bg-gray page page-about">
+			<section class="section page-about__main">
+				<div class="page__header">
+					<div class="container">
+						<h2 class="title-line">о компании</h2>
+						<div class="breadcrumbs">
+						<a href="/">Главная</a>
+						<a href="#">О компании</a>
+						<a href="#">Контакты</a>
+						</div>
+						<nav class="page-nav">
+							<a href="about.html" class="page-nav__link active">О компании</a>
+							<a href="#" class="page-nav__link">Отзывы</a>
+							<a href="contact.html" class="page-nav__link">Контакты</a>
+						</nav>
+						<div class="page__description">
+							<p>Компания Luxury Auto занимается подбором, поставкой автомобилей, конструкторов, распилов и мотоциклов с автоаукциона Японии. Компания Luxury Auto занимается подбором, поставкой автомобилей. Компания Luxury Auto занимается подбором, поставкой автомобилей. Компания Luxury Auto занимается подбором, поставкой автомобилей. Компания Luxury Auto занимается подбором, поставкой автомобилей. </p>
+						</div>
+					</div>
+				</div><!--/page__header-->
+				<div class="block-target">
+					<div class="container">
+						<div class="block-target__inner">
+							<div class="block-target__column">
+								<h2 class="title-line">наша цель</h2>
+								<div class="page__description">
+									<p>Наша цель заключается в транспортировке нужных автомобилей и электромобилей с автоаукционов Японии для наших клиентов. Мы выбрали данное направление в этой сфере - подбор автомобилей с более низкой ценой, чем на рынках России.</p>
+								</div>
+								<ul class="list-check">
+									<li>Подбор качественного автомобиля</li>
+									<li>Индивидуальный осмотр технического состояния автомобиля</li>
+									<li>Помощь в покупке автомобиля</li>
+									<li>Подробные консультации специалистов</li>
+									<li>Возможность сотрудничества с другими регионами РФ</li>
+								</ul>
+							</div><!--/block-target__column-->
+							<div class="block-target__column block-target__column_photo">
+								<img src="assets/images/about-img.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div><!--/block-target-->
+				<div class="block-faq">
+					<div class="container">
+						<h2 class="title-line">часто задаваемые вопросы</h2>
+						<div class="block-faq__inner">
+							<div class="toggle-box">
+								<div class="toggle-box__header">Я нахожусь в другом городе, для начала работы мне обязательно нужно ехать в офис?</div>
+								<div class="toggle-box__content">
+									Нет, не обязательно. Договор можно заключить посредством электронной почты, все сканированные документы будут иметь такую же юридическую силу.
+								</div>
+							</div>
+							<div class="toggle-box">
+								<div class="toggle-box__header">Как производится расчет за автомобиль? Необходима 100% предоплата?</div>
+								<div class="toggle-box__content">
+									Нет, полный расчет за автомобиль происходит только при получении автомобиля в пункте назначения. Схема расчета поэтапная: 1 этап - это предоплата 2 этап - выкуп автомобиля и 3 этап - это доставка и наша комиссия, которая оплачивается при получении автомобиля.
+								</div>
+							</div>
+							<div class="toggle-box">
+								<div class="toggle-box__header">Какой срок поставки автомобиля, если купить его за пределами РФ?</div>
+								<div class="toggle-box__content">
+									Срок поставки зависит от направления, откуда ввозить автомобиль. Быстрее всего доставляются автомобили из Евросоюза и Кореи - 28-30 календарных дней. Автомобили из Японии доставляются до Новосибирска, в среднем, за 35-40 дней, а доставка из США зависит от нескольких факторов - в первую очередь, от штата, где будет куплен автомобиль и как быстро его доставят в порт. Доставка автомобиля морем из США самая долгая и составляет 55-65 дней. Быстрее (за 14 дней) можно привезти самолетом, но это повлечет за собой существенное удорожание.
+								</div>
+							</div>
+							<div class="toggle-box">
+								<div class="toggle-box__header">Как производится расчет за автомобиль? Необходима 100% предоплата?</div>
+								<div class="toggle-box__content">
+									Нет, полный расчет за автомобиль происходит только при получении автомобиля в пункте назначения. Схема расчета поэтапная: 1 этап - это предоплата 2 этап - выкуп автомобиля и 3 этап - это доставка и наша комиссия, которая оплачивается при получении автомобиля.
+								</div>
+							</div>
+							<div class="toggle-box">
+								<div class="toggle-box__header">Какие гарантии своей работы Вы можете предоставить?</div>
+								<div class="toggle-box__content">
+									Гарантии....
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="block block-choice">
+				<div class="container">
+					<div class="block-choice__header">
+						<h2 class="title-line">не уверены в своем выборе?</h2>
+						<div class="subtitle">
+							<p>Напишите нам и наш специалист поможет<br> вам подобрать автомобиль</p>
+						</div>
+					</div>
+				</div>
+				<div class="block-choice__form">
+					<div class="container">
+						<form class="form">
+							<div class="form__item">
+								<label for="name">
+									<span>Введите ваше имя</span>
+								</label>
+								<input type="text" placeholder="Иван" id="name">
+							</div>
+							<div class="form__item">
+								<label for="email">
+									<span>Введите ваш email</span>
+								</label>
+								<input type="email" placeholder="luxury@gmail.com" id="email">
+							</div>
+							<button class="btn">Оставить заявку</button>
+						</form>
+					</div>
+				</div><!--/block-choice__form-->
+				<div class="block-choice__car">
+					<div class="container">
+						<div class="car-block">
+							<div class="car-block__photo car-slider">
+								<div class="car-slider__item">
+									<img src="assets/images/car.png" alt="">
+								</div>
+								<div class="car-slider__item">
+									<img src="assets/images/car.png" alt="">
+								</div>
+								<div class="car-slider__item">
+									<img src="assets/images/car.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!--/block-choice-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__info">
+						<a href="/" class="footer__logo">
+							<img src="assets/images/logo.svg" alt="">
+						</a>
+						<div class="footer__text">
+							<p>LuxuryAuto - компания, занимающаяся поставиками автомобилей из Японии вот уже 10 лет.</p>
+						</div>
+					</div>
+					<div class="footer__menu menu-footer">
+						<div class="menu-footer__inner">
+							<div class="menu-footer__item">
+								<h4 class="menu-footer__title">Автомобили под заказ</h4>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__link"><a href="#">Автомобили без документов</a></li>
+									<li class="menu-footer__link"><a href="#">Автомобили с полной пошлиной</a></li>
+									<li class="menu-footer__link"><a href="#">Аукцион онлайн</a></li>
+								</ul>
+							</div>
+							<div class="menu-footer__item">
+								<h4 class="menu-footer__title">электромобили</h4>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__link"><a href="#">Модели электромобилей</a></li>
+									<li class="menu-footer__link"><a href="#">Ремонт электромобилей</a></li>
+								</ul>
+							</div>
+							<div class="menu-footer__item">
+								<h4 class="menu-footer__title">контакты</h4>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__link"><a href="https://yandex.ru/maps/-/CCUiuZaMpA" target="blank">г. Новосибирск, ул. Галущака 2А</a></li>
+									<li class="menu-footer__link"><a href="tel:+73833110714" class="link link_white"><span class="blue-bg">+7 (383) 311 07 14</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-footer__foot">
+							<div class="menu-footer__social">
+								<a href="#" target="blank">Youtube</a>
+								<a href="#" target="blank">Instagram</a>
+								<a href="#" target="blank">Vkontakte</a>
+							</div>
+							<div>
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<div>@ Luxury Auto, 2021 </div>
+					<div>
+						<span>Разработчик</span>
+						<a href="www.sibda.ru">www.sibda.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+	</div>
+
+	<div class="form-popup">
+		<div class="closex"></div>
+		<div class="form-popup__inner">
+			<div class="white">
+				<span class="form-popup__close">
+					<svg class="close-icon">
+						<use xlink:href="#close-icon"></use>
+					</svg>
+				</span>
+				<div class="form-popup__form">
+					<h2>Оставить заявку</h2>
+					<form class="form">
+						<div class="form__item">
+							<label for="name2">
+								<span>Введите ваше имя</span>
+							</label>
+							<input type="text" placeholder="Иван" id="name2">
+						</div>
+						<div class="form__item">
+							<label for="email2">
+								<span>Введите ваш email</span>
+							</label>
+							<input type="email" placeholder="luxury@gmail.com" id="email2">
+						</div>
+						<button class="btn">Оставить заявку</button>
+					</form>
+				</div>
+            </div>
+		</div>
+	</div><!--/form-popup-->
+
+
+	<div class="mobile-menu">
+		<div class="container">
+			<ul class="mobile-menu__main-list">
+				<li>
+					<h4 class="mobile-menu__main-link mobile-menu__more">Автомобили под заказ</h4>
+					<ul>
+						<li><a href="#" class="mobile-menu__link">Автомобили с полной пошлиной</a></li>
+						<li><a href="#" class="mobile-menu__link">Автомобили без документов</a></li>
+						<li><a href="#" class="mobile-menu__link">Аукцион онлайн</a></li>
+					</ul>
+				</li>
+				<li>
+					<h4 class="mobile-menu__main-link mobile-menu__more">электромобили</h4>
+					<ul>
+						<li><a href="#" class="mobile-menu__link">Модели электромобилей</a></li>
+					<li><a href="#" class="mobile-menu__link">Ремонт электромобилей</a></li>
+					</ul>
+				</li>
+				<li>
+					<h4 class="mobile-menu__main-link mobile-menu__more">марки автомобилей</h4>
+					<ul>
+						<li><a href="#" class="mobile-menu__link">Audi</a></li>
+						<li><a href="#" class="mobile-menu__link">BMW</a></li>
+						<li><a href="#" class="mobile-menu__link">Daihatsu</a></li>
+						<li><a href="#" class="mobile-menu__link">Honda</a></li>
+						<li><a href="#" class="mobile-menu__link">Isuzu</a></li>
+						<li><a href="#" class="mobile-menu__link">Lexus</a></li>
+						<li><a href="#" class="mobile-menu__link">Lincoln</a></li>
+						<li><a href="#" class="mobile-menu__link">Mazda</a></li>
+						<li><a href="#" class="mobile-menu__link">Mercedes</a></li>
+						<li><a href="#" class="mobile-menu__link">Mitsubishi</a></li>
+						<li><a href="#" class="mobile-menu__link">Nissan</a></li>
+						<li><a href="#" class="mobile-menu__link">Subaru</a></li>
+						<li><a href="#" class="mobile-menu__link">Suzuki</a></li>
+						<li><a href="#" class="mobile-menu__link">Toyota</a></li>
+						<li><a href="#" class="link link_green">Посмотреть каталог</a></li>
+					</ul>
+				</li>
+				<li>
+					<h4 class="mobile-menu__main-link mobile-menu__more">О компании</h4>
+					<ul>
+						<li><a href="#" class="mobile-menu__link">О компании</a></li>
+					<li><a href="#" class="mobile-menu__link">Отзывы</a></li>
+					<li><a href="#" class="mobile-menu__link">Контакты</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="mobile-menu__main-link">Блог</a></li>
+				<li><a href="tel:+73833110714" class="mobile-menu__main-link">+7 (383) 311 07 14</a></li>
+				<li><a href="#" class="btn btn-open">оставить заявку</a></li>
+			</ul>
+			
+			<div class="menu__download">
+				<a href="#">Скачать договор поручения</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -220,6 +220,55 @@ $( ".wrapper-menu, .nodrop" ).hover(
 
 /*==============/menu=================*/
 
+/*==============Toggle-box============*/
+	$(".toggle-box__header").on("click", function() {
+		$(this).next().slideToggle(333);
+		$(this).toggleClass('active');
+	});
+/*==============/toggle-box============*/
+
+/*==============Filter-more============*/
+  $(".filter__button-more").on("click", function(event) {
+    event.preventDefault();
+    $(".filter__form_more").slideToggle(333);
+    $(this).toggleClass('active');
+  });
+/*==============/toggle-box============*/
+
+/*==================Slider-nav==========*/
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  prevArrow: $('.auto-card-slider__arrow-prev'),
+  nextArrow: $('.auto-card-slider__arrow-next'),
+  responsive: [
+        {
+          breakpoint: 415,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            prevArrow: $('.auto-card-slider__arrow-prev'),
+            nextArrow: $('.auto-card-slider__arrow-next'),
+          }
+        }
+      ]
+});
+
 
  
 
