@@ -1444,7 +1444,8 @@ h3 {
 
 /*========Cars==========*/
 .block-cars {
-  padding-bottom: 75px; }
+  padding-bottom: 75px;
+  padding-top: 30px; }
   .block-cars__content {
     display: -webkit-box;
     display: -ms-flexbox;
